@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+
+
+
+
+h1{color:paleturquoise;
+font-size:32px;}
+
+h2{color:darkturquoise;
+font-size:24px;}
+
+h3{color:powderblue;
+	font-size:30px;
+line-height:2.5;}
+
+
+ul{display: flex;}
+
+
+
+hr{border:3px dotted powderblue;}
+
+th{background-color:maroon;
+color:white;}
+
+
+
+.logo {
+  position: fixed;
+  top: 40px; /* ← 最初は少し下 */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  max-width: 1500px;
+  transition: 
+    width 0.3s ease,
+    top 0.3s ease;   /* ← topもアニメーション */
+  z-index: 10;
+}
+
+.logo.small {
+  top: 0;        /* ← スクロール後に上ピッタリ */
+  width: 60vw;   /* ← 小さく */
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1200px;   /* ← サイト幅 */
+}
+
+.product {
+  width: 100%;        /* 親要素基準 */
+  max-width: 300px;   /* 1枚の最大サイズ */
+  height: auto;       /* ← 縦横比維持 */
+}
+
+
+
+
+.intro-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+
+  opacity: 0;
+  animation: fadeOut 4s ease-in-out forwards;
+  z-index: 9999;
+}
+
+/* フェードイン → フェードアウト */
+@keyframes fadeOut {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+
+
+
+

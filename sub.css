@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+anchor{font-size:22px;}
+
+h1{color:paleturquoise;
+	border-bottom:3px double paleturquoise;
+border-left:10px solid paleturquoise;
+font-size:32px;}
+
+h2{color:powderblue;
+	border-bottom:5px solid powderblue;
+line-height:2.5;}
+
+h3{color:powderblue;
+	font-size:30px;
+line-height:2.5;}
+
+
+
+h3{color:paleturquoise;
+	font-size:20px;}
+
+img{border-radius:30%;}
+
+
